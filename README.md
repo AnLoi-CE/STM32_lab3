@@ -1,9 +1,11 @@
 **STM32 Traffic Light Controller (FSM Based)**
 
-📌 Giới thiệu dự án (Project Overview)
+**📌 Giới thiệu dự án (Project Overview)**
+
 Dự án này là một hệ thống điều khiển đèn giao thông mô phỏng ngã tư, được phát triển trên vi điều khiển STM32. Mã nguồn được tổ chức theo cấu trúc module hóa, áp dụng chặt chẽ mô hình Máy trạng thái hữu hạn (FSM - Finite State Machine) để quản lý luồng hoạt động linh hoạt, kết hợp với các bộ định thời bằng phần mềm (Software Timer) để tối ưu hóa việc quản lý thời gian mà không dùng hàm delay làm nghẽn hệ thống.
 
-⚙️ Tính năng chính (Key Features)
+**⚙️ Tính năng chính (Key Features)**
+
 Dựa trên kiến trúc FSM, hệ thống hỗ trợ 3 chế độ hoạt động chính:
 
 - Chế độ Tự động (Automatic Mode): Đèn giao thông hoạt động luân phiên theo chu kỳ thời gian định sẵn cho các hướng.
@@ -14,7 +16,8 @@ Dựa trên kiến trúc FSM, hệ thống hỗ trợ 3 chế độ hoạt độ
 
 - Hiển thị trực quan: Sử dụng LED 7 đoạn để đếm ngược thời gian của từng pha đèn.
 
-📂 Cấu trúc mã nguồn (Source Tree Structure)
+**📂 Cấu trúc mã nguồn (Source Tree Structure)**
+
 Mã nguồn trong thư mục Core/Src được chia thành các module độc lập để dễ dàng bảo trì và phát triển:
 
 Quản lý Trạng thái (FSM):
@@ -39,7 +42,8 @@ Hệ thống (System Core):
 
 - global.c: Định nghĩa các biến trạng thái toàn cục, thời lượng đèn được chia sẻ giữa các module FSM.
 
-🚀 Hướng dẫn chạy dự án (Getting Started)
+**🚀 Hướng dẫn chạy dự án (Getting Started)**
+
 Clone repository này về máy.
 
 Mở dự án bằng STM32CubeIDE (hoặc IDE tương ứng bạn đang dùng).
